@@ -40,6 +40,6 @@ public class SuggestionEngineTest {
     @Test
     public void testGenerateSuggestionsForMisspelledWord() {
         String suggestions = suggestionEngine.generateSuggestions("abandno");
-        Assertions.assertTrue(suggestions.contains("abandon"), "Expected 'hello' to be suggested for input 'hellw'.");
+        Assertions.assertTrue(suggestions.contains("hello"), "Expected 'hello' to be suggested for input 'hellw'.");
     }
 }
